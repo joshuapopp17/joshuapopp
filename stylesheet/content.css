@@ -1,0 +1,51 @@
+.contentContainer {
+    position: relative;
+}
+
+/* PHONE VIEW */
+@media only screen and (max-width: 768px) {
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .dates {
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        margin-left: .5rem;
+    }
+
+    .footerText {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}
+
+/* BROWSER VIEW */
+@media screen and (min-width: 768px) {
+    .contentContainer {
+        overflow-x: hidden;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .dates {
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        margin-left: 4rem;
+    }
+
+    .footerText {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}   

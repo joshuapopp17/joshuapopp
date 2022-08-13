@@ -1,0 +1,47 @@
+/* PHONE VIEW */
+@media only screen and (max-width: 768px) {
+    .imageSlideShow {
+        overflow: auto;
+        white-space: nowrap;
+        width: 100%;
+        position: relative;
+    }
+
+    .scroolItem {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+      }
+
+    .image {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+}
+
+/* BROWSER VIEW */
+@media screen and (min-width: 768px) {
+    .imageSlideShow {
+        object-fit: cover;
+        overflow: scroll;
+        white-space: nowrap;
+        width: 100vw;
+        overflow-x: scroll;
+        position: relative;
+    }
+
+    .scroolItem {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+      }
+
+    .image {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+}
