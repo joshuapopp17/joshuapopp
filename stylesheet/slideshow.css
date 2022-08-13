@@ -23,13 +23,36 @@
 
 /* BROWSER VIEW */
 @media screen and (min-width: 768px) {
+
+    /* width */
+::-webkit-scrollbar {
+    height: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(196, 196, 196);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(231, 47, 160);
+  }
+
     .imageSlideShow {
         object-fit: cover;
         overflow: scroll;
+        overflow-y: hidden;
         white-space: nowrap;
         width: 100vw;
         overflow-x: scroll;
         position: relative;
+        background-color: rgb(224, 224, 224);
     }
 
     .scroolItem {
